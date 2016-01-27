@@ -1,25 +1,21 @@
-
-
-// firstReverse = function(a) {
-// 	myArray = a.split("");
-// 	console.log(myArray);
-// 	newArray = myArray.sort(function(a, b){
-
-// 	if ( a[0] > b[1] ) { return 1 }
-//     if ( a[0] < b[1] ) { return -1 }
-//     if ( a[0] === b[1] ) { return 0 }
-
-// 	})
-// 	console.log(newArray);
-
+// function reverse(str) {
+//   var x = str.split('').reverse().join('');
+//   console.log(x);
 // }
 
-// firstReverse("Balls");
+// reverse("Balls");
 
 
-function reverse(str) {
-  var x = str.split('').reverse().join('');
-  console.log(x);
+function swapCase(str) {
+		newstring = []
+	for (var i=0; i<str.length; i++) {
+		if (str[i].match(/[A-Z]/)) {
+			newstring[i] = str[i].toLowerCase();
+		} else if (str[i].match(/[a-z]/)) {
+			newstring[i] = str[i].toUpperCase();
+		}
+	}
+	console.log(newstring.join(''));
 }
 
-reverse("Balls");
+swapCase('Hello');
